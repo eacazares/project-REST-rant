@@ -1,6 +1,6 @@
 const React = require('react')
 
-function Def (html){
+function Def (props){
     return (
         <html>
             <head>
@@ -9,7 +9,7 @@ function Def (html){
                 <link rel = 'stylesheet' href = '/css/style.css'/>
             </head>
             <body>
-                {html.children}
+                {props.children}
             </body>
         </html>
     )
